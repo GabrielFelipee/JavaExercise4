@@ -30,9 +30,13 @@ public class Notebook
 
     public void searchNote(String noteSearched)
     {
-	for(String note: notes)
+	int currentNote;
+	    
+	for(i=0; i< this.notes.size(); i++)
 	{
-	   if( note.equals(noteSearched) )
+	   currentNote = notes.get(i);
+		
+	   if( currentNote.equals(noteSearched) )
 	   {
               System.out.println("The note is in the collection" + noteSearched);
 
